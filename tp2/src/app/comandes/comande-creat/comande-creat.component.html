@@ -1,0 +1,17 @@
+<div class="card">
+  <div class="card-header">Ajout de Commande</div>
+  <div class="card-body">
+    <div class="form-group">
+      <label for="">Ref</label>
+      <input type="text" class="form-control" [(ngModel)]="commande.ref">
+    </div>
+    <div class="form-group">
+      <label for="">Total</label>
+      <input type="text" class="form-control"  [(ngModel)]="commande.total">
+    </div>
+  </div>
+  <div class="card-footer"><button class="btn btn-outline-success" (click)="save()">SAVE</button></div>
+</div>
+
+
+

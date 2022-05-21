@@ -1,0 +1,20 @@
+<table class="table table-striped">
+  <thead>
+  <th>Ref</th>
+  <th>Total</th>
+  <th>Total payer</th>
+  <th>Action</th>
+  </thead>
+
+  <tbody>
+<tr *ngFor="let c of commandes; index as i">
+  <td>{{c.ref}}</td>
+  <td>{{c.total}}</td>
+  <td>{{c.totalPayer}}</td>
+  <td ><span (click)="delete(c,i)"> <i class="fa fa-align-left fa-trash btn btn-sm btn-danger"></i></span></td>
+
+</tr>
+
+  </tbody>
+
+</table>
